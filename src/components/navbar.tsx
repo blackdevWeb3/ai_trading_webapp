@@ -13,15 +13,15 @@ function Navbar() {
         'Portfolio',
     ];
     return (
-        <div className={`bg-[#26292E] navshadow text-white px-6 py-3 flex md:flex-row flex-col items-center justify-between rounded-lg w-full ${isOpen ? "h-[250px]":"md:h-[90px] h-[57px]"} transition-all duration-500 ease-in-out overflow-hidden `}>
+        <div className={`bg-[#26292E] navshadow text-white px-6 py-3 flex md:flex-row flex-col items-center justify-between rounded-lg w-full ${isOpen ? "h-[250px]":"md:h-[90px] h-[60px]"} transition-all duration-500 ease-in-out overflow-hidden `}>
             <div className='flex items-center justify-between w-full'>
-                <h2 className="text-lg italic font-normal ">AI Trading</h2>
+                <h2 className="text-3xl italic font-normal ">AI Trading</h2>
 
                 <div className="space-x-4 hidden md:flex">
                     {tabs.map((tab) => (
                     <button
                         key={tab}
-                        className={`px-4 py-2 rounded-lg text-sm transition-colors duration-300 ${
+                        className={`px-4 py-2 rounded-lg text-[16px] font-normal transition-colors duration-300 ${
                         activeTab === tab ? 'bg-[#61C4E133] text-white' : 'text-gray-400 hover:text-white'
                         }`}
                         onClick={() => setActiveTab(tab)}
@@ -39,7 +39,7 @@ function Navbar() {
             
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="w-full mx-5 p-5 flex flex-col items-center md:hidden transition-all duration-500 ease-in-out">
+                <div className="w-full mx-5 px-5 flex flex-col items-center md:hidden transition-all duration-500 ease-in-out">
                     {tabs.map((tab) => (
                         <button
                         key={tab}
@@ -54,7 +54,7 @@ function Navbar() {
                         </button>
                     ))}
                 </div>
-                )}
+            )}
         </div>
     );
 }
