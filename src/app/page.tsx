@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-center mt-[20px]">
                 <div className="flex gap-[10px]">
-                  <img src="/bitcoin.png" className="w-[19px] h-[19px]"></img>
+                  <img src="/icons/Bitcoin.png" className="w-[19px] h-[19px]"></img>
                   <div className="text-[#FFFFFF] text-[16px] font-normal">Bitcoin</div>
                 </div>
                 <div className="text-[#FFFFFF] text-[16px] font-normal">Buy Price</div>

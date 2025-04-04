@@ -57,7 +57,7 @@ const transactions: Transaction[] = [
 const TransactionTable: React.FC = () => {
   return (
     <div className='overflow-x-auto custom-scrollbar'>
-      <div className="bg-[#26292E] text-white p-6 rounded-md overflow-scroll hide-scrollbar min-w-[800px]">
+      <div className="bg-[#26292E] text-white p-6 rounded-md overflow-scroll hide-scrollbar min-w-[800px] mb-1">
         <div className="grid grid-cols-6 font-normal lg:text-[16px] text-[12px] px-5 border-b border-gray-700 pb-3 mb-3">
           <div>Date</div>
           <div>Transaction Type</div>
