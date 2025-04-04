@@ -11,9 +11,9 @@ const tradeData = Array.from({ length: 30 }, (_, i) => ({
 
 export default function Home() {
   return (
-    <div className="lg:m-auto min-h-screen pt-[22px] mx-5 bg-[#1C1D1F]">
+    <div className="lg:m-auto min-h-screen pt-[22px] md:mx-5 bg-[#1C1D1F]">
       <main className="w-full">
-        <div>
+        <div className="px-6">
           <h1 className="md:text-[32px] text-[28px] font-bold text-[#ffffff]">AI Trading Performance</h1>
           <p className="md:text-[16px] text-[14px] font-normal text-[#ffffff]">Optimize Your Trading with AI Insights</p>
         </div>
