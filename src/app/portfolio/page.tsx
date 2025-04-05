@@ -15,7 +15,7 @@ export default function Home() {
             </div>
         </div>
         <div className="md:grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center text-[#ffffff] lg:text-[32px] text-2xl font-bold md:mt-20 mt-10">
-            <div className="grid gird-rows-4 gap-8 w-full justify-items-center">
+            <div className="grid gap-8 w-full justify-items-center">
                 <div>Daily</div>
                 <StatBlock title="GENERATED FROM AI BOT" maxWidth="max-w-[302px]" value={`${0.00} ETH`} subValue="NaN %"/>
                 <StatGradientCard title="generated from tax" value={`${0.00} ETH`} subValue="NaN %" maxWidth="max-w-[302px]"/>
@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-gray-400 h-[2px] w-full md:hidden col-span-2 my-5"></div>
-            <div className="grid gird-rows-4 gap-8 w-full justify-items-center">
+            <div className="grid gap-8 w-full justify-items-center">
                 <div>Weekly</div>
                 <StatBlock title="GENERATED FROM AI BOT" maxWidth="max-w-[302px]" value={`${0.00} ETH`} subValue="NaN %"/>
                 <StatGradientCard title="generated from tax" value={`${0.00} ETH`} subValue="NaN %" maxWidth="max-w-[302px]"/>
@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-gray-400 h-[2px] w-full lg:hidden col-span-2 my-5"></div>
-            <div className="grid gird-rows-4 gap-8 w-full justify-items-center">
+            <div className="grid gap-8 w-full justify-items-center">
                 <div>Monthly</div>
                 <StatBlock title="GENERATED FROM AI BOT" maxWidth="max-w-[302px]" value={`${0.00} ETH`} subValue="NaN %"/>
                 <StatGradientCard title="generated from tax" value={`${0.00} ETH`} subValue="NaN %" maxWidth="max-w-[302px]"/>
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="bg-gray-400 h-[2px] w-full md:hidden col-span-2 my-5"></div>
-            <div className="grid gird-rows-4 gap-8 w-full justify-items-center">
+            <div className="grid gap-8 w-full justify-items-center">
                 <div>Since Launch</div>
                 <StatBlock title="GENERATED FROM AI BOT" maxWidth="max-w-[302px]" value={`${749.50} ETH`} subValue={`${64.64} %`}/>
                 <StatGradientCard title="generated from tax" value={`${409.96} ETH`} subValue={`${35.36} %`} maxWidth="max-w-[302px]"/>
