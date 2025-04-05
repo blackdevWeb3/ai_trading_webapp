@@ -3,19 +3,7 @@
 import StatBlock from "@/components/statBlock";
 import StatGradientCard from "@/components/StatGradientCard";
 import { FiRefreshCw } from 'react-icons/fi';
-import DataTable from "@/components/DataTable";
 import LiveTokenTable from "@/components/LiveTokenTable";
-
-// const dummyData = Array(15).fill({
-//     token: '999,646,237 FUCKER',
-//     buySize: '0.04 ETH',
-//     sellSize: '0.00 ETH',
-//     profit: '-0.04 ETH (0.00X)',
-//     sellTime: 'January 12, 2025 at 8:41:11 AM',
-//     duration: '186 days 12 hours 17 minutes 48 seconds',
-//     wallet: 'Wallet 1',
-//     etherscan: 'Link',
-//   });
 
 export default function Home() {
   return (
@@ -110,7 +98,27 @@ export default function Home() {
             </div>
             <LiveTokenTable />
         </div>
+        <div className="flex justify-center md:mt-[160px] mt-8">
+            <div className="flex flex-col gap-8 max-w-[844px] w-full text-center">
+                <div className="font-bold md:text-4xl text-[28px] text-[#fff]">How Does AimBot AI work?</div>
+                <div className="flex flex-col gap-8 font-normal md:text-2xl text-[16px] text-[#fff] text-center">
+                    <div>AI Bot holds tokens in [wallet 1] , [wallet 2], [wallet 3] and , it will auto-buy tokens based on different parameters.</div>
+                    <div>Profit is sent to this wallet.</div>
+                    <div>Profit is distributed manually to the reward contract, from where investors can claim ETH rewards.</div>
+                    <div>To calculate your share of rewards, simply do:[ETH in reward wallet] * (your token balance / total supply)‍</div>
+                    <div>Or check it from the dashboard</div>
+                </div>
+                <div>
+                <button
+                    className="text-white p-2.5 mt-6 rounded-md font-normal text-[16px] flex items-center justify-center gap-2 hover:opacity-90 mx-auto"
+                    style={{ background: 'linear-gradient(180deg, #61C4E1 -31.25%, #26292E 118.75%)', }}>
+                        Claim Rewards
+                </button>
+                </div>
+            </div>
+        </div>
       </main>
+      <footer className="w-full"></footer>
     </div>
   );
 }
