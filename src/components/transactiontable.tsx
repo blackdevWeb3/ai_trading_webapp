@@ -16,7 +16,7 @@ const transactions: Transaction[] = [
     date: '2025-03-01',
     type: 'Buy',
     asset: 'Bitcoin',
-    icon: '/icons/bitcoin.png',
+    icon: '/icons/Bitcoin.png',
     purchasePrice: 44000,
     salePrice: 45000,
   },
