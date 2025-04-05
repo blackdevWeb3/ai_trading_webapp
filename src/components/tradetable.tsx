@@ -11,11 +11,11 @@ type Trade = {
 };
 
 const trades: Trade[] = [
-  { asset: 'Bitcoin', icon: '/icons/bitcoin.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
+  { asset: 'Bitcoin', icon: '/icons/Bitcoin.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
   { asset: 'Ethereum', icon: '/icons/ethereum.png', buyPrice: 3200, quantity: 2.0, status: 'Completed' },
   { asset: 'BNB', icon: '/icons/bnb.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
   { asset: 'Polygon', icon: '/icons/polygon.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
-  { asset: 'Bitcoin', icon: '/icons/bitcoin.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
+  { asset: 'Bitcoin', icon: '/icons/Bitcoin.png', buyPrice: 45000, quantity: 0.5, status: 'Pending' },
 ];
 
 
