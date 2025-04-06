@@ -4,6 +4,9 @@ import StatBlock from "@/components/statBlock";
 import StatGradientCard from "@/components/StatGradientCard";
 import { FiRefreshCw } from 'react-icons/fi';
 import LiveTokenTable from "@/components/LiveTokenTable";
+import { FaTelegramPlane } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -118,7 +121,62 @@ export default function Home() {
             </div>
         </div>
       </main>
-      <footer className="w-full"></footer>
+      <footer className="w-full">
+        <div className="text-white text-center justify-items-center md:pt-25 pt-10 pb-12 bg-[#1c1c1e]">
+            <h2 className="md:text-4xl text-3xl font-bold mb-10">Join the community</h2>
+            <div className="flex flex-col sm:flex-row gap-4 justify-between items-center max-w-[1000px] w-full">
+                {/* Telegram */}
+                <a
+                    href="https://t.me/your-telegram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center max-w-[469px] w-full gap-3 px-4 py-7 rounded-lg text-white font-normal text-[16px] sm:text-base"
+                    style={{
+                        background: 'linear-gradient(180deg, #61C4E1 -31.25%, #26292E 118.75%)',
+                    }}
+                    >
+                    <FaTelegramPlane size={30} />
+                    Join the Aimbot AI Telegram community!
+                </a>
+
+                {/* Twitter / X */}
+                <a
+                    href="https://x.com/your-x-profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center max-w-[469px] w-full gap-3 px-4 py-7 rounded-lg text-white font-normal text-[16px] sm:text-base"
+                    style={{
+                        background: 'linear-gradient(180deg, #61C4E1 -31.25%, #26292E 118.75%)',
+                    }}
+                    >
+                    <FaXTwitter size={30} />
+                    Keep up with Aimbot AI on X
+                </a>
+            </div>
+        </div>
+        <div className="text-white text-center py-10 bg-[#1c1c1e]">
+            <h2 className="text-xl italic mb-6">AI Trading</h2>
+
+            <div className="flex flex-wrap justify-center gap-8 text-sm mb-6">
+                <Link href="/" className="hover:underline">
+                AI Trading Performance
+                </Link>
+                <Link href="/current-buys" className="hover:underline">
+                Current Buys
+                </Link>
+                <Link href="/past-transactions" className="hover:underline">
+                Past Transactions
+                </Link>
+                <Link href="/portfolio" className="hover:underline">
+                Portfolio
+                </Link>
+            </div>
+
+            <div className="h-px w-[220px] mx-auto bg-white/30 mb-4" />
+
+            <p className="text-xs text-gray-400">© 2025 AI Trading Bot. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
